@@ -142,7 +142,7 @@ html,body,[class*="css"]{font-family:var(--font-main)!important;background-color
 # ─────────────────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data() -> pd.DataFrame:
-    df = pd.read_csv("data/backend_processed_clusters.csv")
+    df = pd.read_csv("backend_processed_clusters.csv")
     df["RAR"] = df["Mean_Return"] / df["Volatility"]
     return df
 
